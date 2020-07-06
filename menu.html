@@ -8,9 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
 
     <title>Le Chocolat</title>
 
@@ -19,21 +22,22 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/images/logo.png" height="40" width="54"></a>
+            <a class="navbar-brand" href="./index.html">
+                <img src="images/logo.png" height="40" width="54"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
                             Home</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
                                 class="fa fa-info fa-lg"></span>
                             About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./menu.html"><span class="fa fa-list fa-lg"></span> Menu</a>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>
+                            Menu</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
                                 class="fa fa-address-card fa-lg"></span>
@@ -197,7 +201,7 @@
                         recipes. Our creations will travel you in the chocolate world!</p>
                 </div>
                 <div class="col-12 col-sm-3">
-                    <img src="images/images/logo.png" class="img-fluid">
+                    <img src="images/logo.png" class="img-fluid">
                 </div>
 
                 <div class="col-12 col-sm-3 d-flex align-items-center">
@@ -208,15 +212,15 @@
         </div>
 
     </header>
-    
 
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Menu</li>
+        </ol>
+    </nav>
     <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Menu</li>
-            </ol>
-        </nav>
         <div class="row row-header">
             <div class="col-12">
                 <h3>Menu</h3>
@@ -225,69 +229,209 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row row-content">
-            <div class="col">
-                <h2>Under heavy Construction!!</h2>
-            </div>
-        </div>
-    </div>
-<footer>
-    <footer class="footer">
+    <section id="our_menu" class="pt-5 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-5 offset-sm-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="./contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-                        121, Clear Wave Road<br>
-                        Clear Wave Road, Aloha<br>
-                        HAWAII<br>
-                        <i class="fa fa-phone fa-lg"></i>: +987 6543 2100<br>
-                        <i class="fa fa-fax fa-lg"></i>: +987 6543 2101<br>
-                        <i class="fa fa-envelope fa-lg"></i>: <a
-                            href="mailto:chocolat@nomail.net">chocolat@nomail.net</a>
-                    </address>
-                </div>
-                <div class="col- col-sm-4">
-                    <div class="col-auto" style="text-align:center">
-                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"> <i
-                                class="fa fa-google-plus"></i></a> <a class="btn btn-social-icon btn-facebook"
-                            href="http://www.facebook.com/profile.php?id="> <i class="fa fa-facebook"></i></a> <a
-                            class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"> <i
-                                class="fa fa-linkedin"></i></a> <a class="btn btn-social-icon btn-twitter"
-                            href="http://twitter.com/"> <i class="fa fa-twitter"></i></a> <a
-                            class="btn btn-social-icon btn-youtube" href="http://youtube.com/"> <i
-                                class="fa fa-youtube"></i></a> <a class="btn btn-social-icon" href="mailto:"> <i
-                                class="fa fa-envelope-o"></i></a>
+                <div class="col-lg-12">
+                    <div class="page_title text-center">
+                        <h1>Treat Yourself</h1>
+                        <div class="single_line"></div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <p> &copy; Copyright 2018 Le Chocolat</p>
-
+            <div class="row">
+                <ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="whitechocolates-tab" data-toggle="tab" href="#whitechocolates"
+                            role="tab">White Chocolates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="darkchocolates-tab" data-toggle="tab" href="#darkchocolates"
+                            role="tab">Dark Chocolates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="milkchocolates-tab" data-toggle="tab" href="#milkchocolates"
+                            role="tab">Milk Chocolates</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="tab-content col-lg-12" id="myTabContent">
+                    <div class="tab-pane fade show active" id="whitechocolates" role="tabpanel"
+                        aria-labelledby="whitechocolate-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/white-chocolate-380702_960_720.jpg" alt="white chocolates">
+                                    <div class="menu_content">
+                                        <h4>White Chocolates <span>$12</span></h4>
+                                        <p>Enjoy the irresistable taste of our white chocolates.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/coffee-3200073_960_720.jpg" alt="white chocolate cupcaked">
+                                    <div class="menu_content">
+                                        <h4>White Chocolate Cupcakes<span>$14</span></h4>
+                                        <p>Taste our home made cupcakes that melt in your mouth.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/ice-3363898_960_720.jpg" alt="white chocolate ice cream">
+                                    <div class="menu_content">
+                                        <h4>White Chocolate Ice Cream<span>$10</span></h4>
+                                        <p>The perfect dessert for a hot summer day.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/milk-4598823_960_720.jpg" alt="white chocolate beverage">
+                                    <div class="menu_content">
+                                        <h4>White Chocolate Beverage<span>$5</span></h4>
+                                        <p>Your best winter companion.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="darkchocolates" role="tabpanel" aria-labelledby="darkchocolates-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/dark-menu.jpg" alt="dark chocolate">
+                                    <div class="menu_content">
+                                        <h4>Dark Chocolates<span>$12</span></h4>
+                                        <p>Enjoy your chocolates without the nutritional worries.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/darkcupcakes-menu.jpg" alt="dark chocolate cupcakes">
+                                    <div class="menu_content">
+                                        <h4>Dark Chocolate Cupcakes<span>$14</span></h4>
+                                        <p>Eat care-free our hand made delicious dark chocolate cupcakes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/dark ice cream-menu.jpg" alt="dark chocolate ice cream">
+                                    <div class="menu_content">
+                                        <h4>Dark Chocolate Ice Cream<span>$10</span></h4>
+                                        <p>Enjoy your healthy summer with some dark chocolate ice cream.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/darkchocolate beverage-menu.jpg" alt="dark chocolate beverage">
+                                    <div class="menu_content">
+                                        <h4>Dark Chocolate Beverage<span>$5</span></h4>
+                                        <p>Warm up with a hot and delicious cup of our dark chocolate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="milkchocolates" role="tabpanel" aria-labelledby="milkchocolates-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/milk-chocolates-menu.jpg" alt="milk chocolates">
+                                    <div class="menu_content">
+                                        <h4>Milk Chocolates<span>$12</span></h4>
+                                        <p>Treat yourself with our classic and tasty milk chocolates.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/chocolate-cupcakes-menu.jpg" alt="milk chocolate">
+                                    <div class="menu_content">
+                                        <h4>Milk Chocolate Cupcakes<span>$14</span></h4>
+                                        <p>Taste our classic treat to understand what real milk chocolate tastes like.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_menu">
+                                    <img src="images/milk ice cream-menu.jpg" alt="milk chocolate ice cream">
+                                    <div class="menu_content">
+                                        <h4>Milk Chocolate Ice Cream<span>$10</span></h4>
+                                        <p>If you scream for ice cream that's the taste you don't wanna miss.</p>
+                                    </div>
+                                </div>
+                                <div class="single_menu">
+                                    <img src="images/milk beverage-menu.jpg" alt="milk chocolate beverage">
+                                    <div class="menu_content">
+                                        <h4>Milk Chocolate Beverage<span>$5</span></h4>
+                                        <p>Best way to relax on a winter night with our milk chocolate beverage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
+    <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 offset-sm-1 col-sm-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./aboutus.html">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="./contactus.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-5">
+                        <h5>Our Address</h5>
+                        <address>
+                            121, Clear Wave Road<br>
+                            Clear Wave Road, Aloha<br>
+                            HAWAII<br>
+                            <i class="fa fa-phone fa-lg"></i>: +987 6543 2100<br>
+                            <i class="fa fa-fax fa-lg"></i>: +987 6543 2101<br>
+                            <i class="fa fa-envelope fa-lg"></i>: <a
+                                href="mailto:chocolat@nomail.net">chocolat@nomail.net</a>
+                        </address>
+                    </div>
+                    <div class="col- col-sm-4">
+                        <div class="col-auto" style="text-align:center">
+                            <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"> <i
+                                    class="fa fa-google-plus"></i></a> <a class="btn btn-social-icon btn-facebook"
+                                href="http://www.facebook.com/profile.php?id="> <i class="fa fa-facebook"></i></a> <a
+                                class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"> <i
+                                    class="fa fa-linkedin"></i></a> <a class="btn btn-social-icon btn-twitter"
+                                href="http://twitter.com/"> <i class="fa fa-twitter"></i></a> <a
+                                class="btn btn-social-icon btn-youtube" href="http://youtube.com/"> <i
+                                    class="fa fa-youtube"></i></a> <a class="btn btn-social-icon" href="mailto:"> <i
+                                    class="fa fa-envelope-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p> &copy; Copyright 2018 Le Chocolat</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
     </footer>
-</footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- endbuild -->
+
 </body>
 
 </html>

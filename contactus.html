@@ -8,10 +8,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
-
+     <!-- endbuild -->
     <title>Le Chocolat: Contact Us</title>
 
 </head>
@@ -19,8 +20,8 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/images/logo.png" height="40" width="54"></a>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" height="40" width="54"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -90,6 +91,103 @@
             </div>
         </div>
     </div>
+    
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve your baskets </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-3">Number of baskets</label>
+                            <div class="col col-sm-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio5" value="option5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio6" value="option6">
+                                    <label class="form-check-label" for="inlineRadio6">6</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-3 col-form-label">Date and Time</label>
+                            <div class="input-group col-12 col-sm-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="date"> <i class="fa fa-calendar"
+                                            aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <input type="date" class="form-control" id="dateInput">
+                            </div>
+
+                            <div class="input-group col-12 col-sm-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="time"><i class="fa fa-clock-o"
+                                            aria-hidden="true"></i></span>
+                                </div>
+                                <input type="time" class="form-control" id="timeInput">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-3 col-form-label">Home Delivery</label>
+                            <div class="col-12 col-sm">
+                                <div class="btn-group" role="group" aria-label="Home Delivery">
+                                    <label class="btn btn-success active" for="yes">
+                                        <input type="radio" name="section" id="yes" checked>Yes
+                                    </label>
+                                    <label class="btn btn-danger" for="no">
+                                        <input type="radio" name="section" id="no">No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<button type="submit" class="btn btn-primary btn-sm col-sm-offset-2">Reserve</button> -->
+                    </form>
+                </div>
+                <div class="row-row content">
+                    <div class="col 12 col-sm-8">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -100,19 +198,26 @@
                         recipes. Our creations will travel you in the chocolate world!</p>
                 </div>
                 <div class="col-12 col-sm-3">
-                    <img src="images/images/logo.png" class="img-fluid">
+                    <img src="images/logo.png" class="img-fluid">
                 </div>
+
+                <div class="col-12 col-sm-3 d-flex align-items-center">
+                    <a class="btn btn-warning btn-sm btn-block" role="button" href="#reserveModal"
+                        data-toggle="modal">Reserve your baskets</a>
+                </div>
+            </div>
         </div>
-</div>
+
     </header>
 
-    <div class="container">
+    
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Contact us</li>
             </ol>
         </nav>
+        <div class="container">
         <div class="row row-header">
             <div class="col-12">
                <h3>Contact Us</h3>
@@ -223,8 +328,7 @@
              <div class="col-12 col-md">
             </div>
        </div>
-
-    </div>
+ </div>
 
     <footer class="footer">
         <div class="container">
@@ -275,11 +379,12 @@
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
 </body>
 
